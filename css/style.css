@@ -52,16 +52,21 @@ body {
 }
 @media screen and (max-width: 600px){
     .container {
-        width: 100%;
+       width: 100%;
     }
     .card {
+        display: flex;
+        align-self: center;
+        width: 80%;
+        padding: 0;
+        border-radius: 12px;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-items: center
+        align-items: flex-start;
     }
     .type-text  {
-        padding: 80px;
-        padding-top: 150px;
+        transform: translateY(45%);
+        align-items: center;
     }
     .type-text h1,p {
         text-align: center;
@@ -71,11 +76,18 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .image-box {
+        width: 0;
+    }
     .image-box img {
         border-radius: 12px 12px 0 0;
-        width: 295px;
-        height: 100%;
-        position: sticky;
+        width: 332px;
+        height: 0%;
+        transform: translateY(-210%);
+    }
+    .attribution {
+        display: none;
+
     }
 }  
 
